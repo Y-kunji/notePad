@@ -1,0 +1,50 @@
+<% var title = "TOP"; var description = "トップのdescription"; %> <% include
+src/ejs/template/_head %>
+
+<div class="l-top">
+  <h1>メモ帳</h1>
+</div>
+
+<div class="l-contents">
+  <div class="l-main">
+    <div class="l-sideBar js-slide">
+      <form onsubmit="return false;">
+        <input id ="search" class="p-sideBar__form" type="text" placeholder="検索">
+      </form>
+      <div class="p-sideBar__btnFlex">
+        <div class="p-sideBar__form-btn js-search">検索</div>
+        <div class="p-sideBar__form-btn js-reset">リセット</div>
+      </div>
+      <ul class="p-sideBar__list js-list">
+        <!-- <li class="p-sideBar__memo js-memo" data-num="0"><p class="p-sideBar__title js-addTitle">タイトル</p><p class="p-sideBar__time js-addTime">更新日時</p></li> -->
+        <!-- <li class="p-sideBar__memo js-memo"><p>タイトル</p><p class="p-sideBar__time">更新日時</p></li> -->
+      </ul>
+    </div>
+    <div class="l-mainArea">
+      <div class="l-menuBar">
+        <!-- sp only -->
+        <div>
+          <div class="p-menuBar__hum js-hum">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="u-flex">
+          <!-- <div class="c-btn--tiny">B</div>
+          <div class="c-btn--tiny">I</div>
+          <div class="c-btn--tiny">U</div> -->
+          <div class="p-menuBar__btn c-btn js-btn--del">削除</div>
+          <div class="p-menuBar__btn c-btn js-btn--new">新規</div>
+          <div class="p-menuBar__btn c-btn js-btn--save">保存</div>
+        </div>
+      </div>
+      <div class="l-textArea">
+        <textarea class="p-textArea__main js-text" readonly></textarea>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<% include src/ejs/template/_footer %>

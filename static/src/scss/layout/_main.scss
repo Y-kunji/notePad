@@ -1,0 +1,44 @@
+.l-wrap {
+  height: calc(100vh);
+}
+.l-top {
+  padding: 30px;
+  border: 1px solid #000;
+}
+
+.l-main {
+  display: flex;
+  min-height: calc(100vh-84px);
+}
+.l-sideBar {
+  min-width: 200px;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #eee;
+  @include mq(u-sp) {
+    height: 100%;
+    position: fixed;
+    top: 144px;
+    left: -400px;
+    z-index: 2;
+    //transform: translate(400px);
+    transition: all .3s;
+  }
+}
+.l-mainArea {
+  width: 100%;
+}
+.l-menuBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #eee;
+}
+.l-textArea {
+  height: calc(100% - 60px);
+  padding: 10px;
+  border: 1px solid #000;
+}

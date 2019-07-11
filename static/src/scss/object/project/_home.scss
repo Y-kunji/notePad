@@ -1,0 +1,73 @@
+/*///////////////////////////////////
+  sideBar
+///////////////////////////////////*/
+.p-sideBar__list {
+  overflow: scroll;
+  height: calc(100vh - 180px);
+}
+.p-sideBar__form {
+  width: 100%;
+  border: 1px solid #000;
+}
+.p-sideBar__btnFlex {
+  display: flex;
+}
+.p-sideBar__form-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #222;
+  border-radius: 4px;
+}
+.p-sideBar__memo {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border:1px solid #000;
+  .p-sideBar__time{
+    font-size: 12px;
+  }
+}
+
+/*///////////////////////////////////
+  menuBar
+///////////////////////////////////*/
+.p-menuBar__hum {
+  display: none;
+  @include mq(u-sp){
+    display: block;
+
+    span {
+      display: block;
+      width: 20px;
+      height: 2px;
+
+      margin-bottom: 5px;
+      background-color: #000;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.is-open {
+  &.js-slide{
+    transform: translate(400px);
+  }
+}
+
+.p-menuBar__btn {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+/*///////////////////////////////////
+  textArea
+///////////////////////////////////*/
+.p-textArea__main {
+  width: 100%;
+  height: 80vh;
+  //sbackground-color: #ddd;
+}
